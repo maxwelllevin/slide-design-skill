@@ -1,0 +1,504 @@
+<!-- ARM User Facility official slide templates.
+     Derived from arm-pptx-template.pptx (Title, Section Dividers, Standard,
+     2-Column Comparison, Picture with Caption, and Scientific Data exhibits). -->
+
+<template id="slide-cover">
+<section class="slide slide-bleed" data-density="editorial" style="background-color:#194173;">
+  {{@gradient-bg preset=theme}}
+  {{@scrim variant=left color=#112E54 from=0.72 mid=0.42 to=0.12 z=1}}
+  <div class="arm-cover-wrap">
+    <div class="arm-cover-sky">
+      <div class="arm-cover-top">
+        <div class="arm-cover-kicker">{{kicker}}</div>
+        <svg class="arm-logo" viewBox="972 36 140 50" fill="none" aria-hidden="true" data-visual-event="signature-mark"><path d="M1005.15 73.05 1006.26 69.8 1007.77 65.37 1019.61 65.37 1020.45 67.88 1021.52 71.07C1025.94 70.7 1030.63 70.45 1035.61 70.33L1035.61 59.04 1037.47 59.04C1038.92 59.04 1039.9 59.87 1041.7 64.62 1042.57 66.9 1043.26 68.83 1043.79 70.25 1043.85 70.25 1043.91 70.26 1043.98 70.28 1049.55 70.34 1054.8 70.57 1059.72 70.94L1059.72 49.32 1059.79 49.54 1061.69 55.69 1063.9 62.86 1064.28 64.09 1066.55 71.56C1069.15 71.84 1071.65 72.15 1074.03 72.48L1074.56 70.71 1075.42 67.93 1078.27 58.76 1081.2 49.32 1081.2 73.63C1083.83 74.1 1086.29 74.6 1088.58 75.1L1088.58 38.19 1077.58 38.19 1073.97 50.6 1070.5 62.5 1070.45 62.6 1070.4 62.5 1068.96 57.56 1067.45 52.38 1065.8 46.73 1063.31 38.19 1052.31 38.19 1052.31 69.75C1052.31 69.75 1051.12 66.96 1049.67 63.4 1048.7 61.03 1048.05 59.37 1047.29 58.11 1046.86 57.4 1046.39 56.82 1045.81 56.32L1045.87 56.29C1046.42 56.12 1046.94 55.8 1047.44 55.39 1049.18 53.95 1050.51 51.22 1050.51 48.11 1050.51 45.27 1049.75 42.9 1048.18 41.25 1048 41.06 1047.85 40.84 1047.65 40.67 1045.99 39.24 1043.78 38.59 1040.88 38.34 1040.02 38.27 1039.1 38.23 1038.12 38.21 1037.81 38.21 1037.52 38.2 1037.19 38.2L1028.36 38.2 1028.36 67.37 1027.33 64.55 1023.39 53.74 1018.92 41.46 1017.73 38.2 1009.6 38.2 1007.08 45.42 1006.4 47.37 1003.09 56.84 1002.3 59.11 999.5 67.13 998.66 69.53 996.9 74.56C999.46 74.03 1002.2 73.52 1005.15 73.05ZM1035.6 50.96 1035.6 45.02 1038.51 45.02C1038.71 45.02 1038.88 45.04 1039.07 45.05 1041.68 45.21 1043.23 46.52 1043.23 49.07 1043.23 51.1 1042.1 52.28 1040.13 52.72 1039.53 52.86 1038.87 52.93 1038.13 52.93L1035.6 52.93 1035.6 50.95ZM1011.54 53.36 1012.46 50.51 1013.53 47.21 1015.64 53.51 1017.49 59.04 1009.68 59.04 1011.53 53.36Z" fill="#FFFFFF"/><path d="M974.04 84.26C974.04 84.26 998.33 73.09 1041.41 73.09 1084.49 73.09 1109.04 84.26 1109.04 84.26 1109.04 84.26 1087.37 76.72 1041.41 76.72 995.45 76.72 974.04 84.26 974.04 84.26Z" fill="#FFFFFF"/></svg>
+      </div>
+      <div class="arm-cover-hero">
+        <h1 class="arm-cover-title">{{title}}</h1>
+        <div class="arm-cover-meta">
+          <div class="arm-cover-presenter">{{presenter}}</div>
+          <div class="arm-cover-org">{{organization}}</div>
+          <div class="arm-cover-event">{{event}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="arm-lab-bar" data-visual-event="visual-plate"></div>
+    <div class="arm-cover-foot">
+      <div class="arm-doe-mark" data-visual-event="signature-mark"></div>
+      <div class="arm-foot-center">{{footer-label}}</div>
+      <div class="arm-foot-right">
+        <span>{{date}}</span>
+        <span class="arm-foot-sep"></span>
+        <span class="arm-foot-page">{{page-no}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+</template>
+
+<template id="slide-section-divider">
+<section class="slide slide-bleed" data-density="editorial" style="background-color:#194173;">
+  {{@gradient-bg preset=theme}}
+  {{@scrim variant=left color=#112E54 from=0.78 mid=0.48 to=0.18 z=1}}
+  <div class="arm-sec-wrap">
+    <div class="arm-sec-top">
+      <span class="arm-sec-badge">Section {{section-no}}</span>
+      <svg class="arm-logo" viewBox="972 36 140 50" fill="none" aria-hidden="true" data-visual-event="signature-mark"><path d="M1005.15 73.05 1006.26 69.8 1007.77 65.37 1019.61 65.37 1020.45 67.88 1021.52 71.07C1025.94 70.7 1030.63 70.45 1035.61 70.33L1035.61 59.04 1037.47 59.04C1038.92 59.04 1039.9 59.87 1041.7 64.62 1042.57 66.9 1043.26 68.83 1043.79 70.25 1043.85 70.25 1043.91 70.26 1043.98 70.28 1049.55 70.34 1054.8 70.57 1059.72 70.94L1059.72 49.32 1059.79 49.54 1061.69 55.69 1063.9 62.86 1064.28 64.09 1066.55 71.56C1069.15 71.84 1071.65 72.15 1074.03 72.48L1074.56 70.71 1075.42 67.93 1078.27 58.76 1081.2 49.32 1081.2 73.63C1083.83 74.1 1086.29 74.6 1088.58 75.1L1088.58 38.19 1077.58 38.19 1073.97 50.6 1070.5 62.5 1070.45 62.6 1070.4 62.5 1068.96 57.56 1067.45 52.38 1065.8 46.73 1063.31 38.19 1052.31 38.19 1052.31 69.75C1052.31 69.75 1051.12 66.96 1049.67 63.4 1048.7 61.03 1048.05 59.37 1047.29 58.11 1046.86 57.4 1046.39 56.82 1045.81 56.32L1045.87 56.29C1046.42 56.12 1046.94 55.8 1047.44 55.39 1049.18 53.95 1050.51 51.22 1050.51 48.11 1050.51 45.27 1049.75 42.9 1048.18 41.25 1048 41.06 1047.85 40.84 1047.65 40.67 1045.99 39.24 1043.78 38.59 1040.88 38.34 1040.02 38.27 1039.1 38.23 1038.12 38.21 1037.81 38.21 1037.52 38.2 1037.19 38.2L1028.36 38.2 1028.36 67.37 1027.33 64.55 1023.39 53.74 1018.92 41.46 1017.73 38.2 1009.6 38.2 1007.08 45.42 1006.4 47.37 1003.09 56.84 1002.3 59.11 999.5 67.13 998.66 69.53 996.9 74.56C999.46 74.03 1002.2 73.52 1005.15 73.05ZM1035.6 50.96 1035.6 45.02 1038.51 45.02C1038.71 45.02 1038.88 45.04 1039.07 45.05 1041.68 45.21 1043.23 46.52 1043.23 49.07 1043.23 51.1 1042.1 52.28 1040.13 52.72 1039.53 52.86 1038.87 52.93 1038.13 52.93L1035.6 52.93 1035.6 50.95ZM1011.54 53.36 1012.46 50.51 1013.53 47.21 1015.64 53.51 1017.49 59.04 1009.68 59.04 1011.53 53.36Z" fill="#FFFFFF"/><path d="M974.04 84.26C974.04 84.26 998.33 73.09 1041.41 73.09 1084.49 73.09 1109.04 84.26 1109.04 84.26 1109.04 84.26 1087.37 76.72 1041.41 76.72 995.45 76.72 974.04 84.26 974.04 84.26Z" fill="#FFFFFF"/></svg>
+    </div>
+    <div class="arm-sec-mid">
+      <div class="arm-sec-num" data-visual-event="oversized-number">{{section-no}}</div>
+      <h2 class="arm-sec-title">{{title}}</h2>
+      <p class="arm-sec-sub">{{subtitle}}</p>
+    </div>
+    <div class="arm-sec-foot">
+      <div class="arm-doe-mark-white" data-visual-event="signature-mark"></div>
+      <div>{{footer-label}}</div>
+      <div style="display:flex; align-items:center; gap:16px;">
+        <span>{{date}}</span>
+        <span style="width:1px; height:22px; background:rgba(255,255,255,0.6);"></span>
+        <span>{{page-no}} / {{page-total}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+</template>
+
+<template id="slide-section-split">
+<section class="slide">
+  <div class="arm-shell slide-flow">
+    <div class="arm-banner flow-head">
+      <div class="arm-banner-bg"></div>
+      <div class="arm-banner-left">
+        <div class="arm-eyebrow">{{eyebrow}}</div>
+        <h2 class="arm-banner-title">{{title}}</h2>
+      </div>
+      <svg class="arm-logo" viewBox="972 36 140 50" fill="none" aria-hidden="true" data-visual-event="signature-mark"><path d="M1005.15 73.05 1006.26 69.8 1007.77 65.37 1019.61 65.37 1020.45 67.88 1021.52 71.07C1025.94 70.7 1030.63 70.45 1035.61 70.33L1035.61 59.04 1037.47 59.04C1038.92 59.04 1039.9 59.87 1041.7 64.62 1042.57 66.9 1043.26 68.83 1043.79 70.25 1043.85 70.25 1043.91 70.26 1043.98 70.28 1049.55 70.34 1054.8 70.57 1059.72 70.94L1059.72 49.32 1059.79 49.54 1061.69 55.69 1063.9 62.86 1064.28 64.09 1066.55 71.56C1069.15 71.84 1071.65 72.15 1074.03 72.48L1074.56 70.71 1075.42 67.93 1078.27 58.76 1081.2 49.32 1081.2 73.63C1083.83 74.1 1086.29 74.6 1088.58 75.1L1088.58 38.19 1077.58 38.19 1073.97 50.6 1070.5 62.5 1070.45 62.6 1070.4 62.5 1068.96 57.56 1067.45 52.38 1065.8 46.73 1063.31 38.19 1052.31 38.19 1052.31 69.75C1052.31 69.75 1051.12 66.96 1049.67 63.4 1048.7 61.03 1048.05 59.37 1047.29 58.11 1046.86 57.4 1046.39 56.82 1045.81 56.32L1045.87 56.29C1046.42 56.12 1046.94 55.8 1047.44 55.39 1049.18 53.95 1050.51 51.22 1050.51 48.11 1050.51 45.27 1049.75 42.9 1048.18 41.25 1048 41.06 1047.85 40.84 1047.65 40.67 1045.99 39.24 1043.78 38.59 1040.88 38.34 1040.02 38.27 1039.1 38.23 1038.12 38.21 1037.81 38.21 1037.52 38.2 1037.19 38.2L1028.36 38.2 1028.36 67.37 1027.33 64.55 1023.39 53.74 1018.92 41.46 1017.73 38.2 1009.6 38.2 1007.08 45.42 1006.4 47.37 1003.09 56.84 1002.3 59.11 999.5 67.13 998.66 69.53 996.9 74.56C999.46 74.03 1002.2 73.52 1005.15 73.05ZM1035.6 50.96 1035.6 45.02 1038.51 45.02C1038.71 45.02 1038.88 45.04 1039.07 45.05 1041.68 45.21 1043.23 46.52 1043.23 49.07 1043.23 51.1 1042.1 52.28 1040.13 52.72 1039.53 52.86 1038.87 52.93 1038.13 52.93L1035.6 52.93 1035.6 50.95ZM1011.54 53.36 1012.46 50.51 1013.53 47.21 1015.64 53.51 1017.49 59.04 1009.68 59.04 1011.53 53.36Z" fill="#FFFFFF"/><path d="M974.04 84.26C974.04 84.26 998.33 73.09 1041.41 73.09 1084.49 73.09 1109.04 84.26 1109.04 84.26 1109.04 84.26 1087.37 76.72 1041.41 76.72 995.45 76.72 974.04 84.26 974.04 84.26Z" fill="#FFFFFF"/></svg>
+    </div>
+    <div class="arm-stage flow-stage">
+      <p class="arm-lead">{{lead}}</p>
+      <div class="arm-split-grid">
+        <div class="arm-split-left">
+          <div class="arm-split-cards">
+            <div class="arm-split-card"><div class="arm-split-idx" data-visual-event="item-marker">01</div><div><h4>{{h1-title}}</h4><p>{{h1-body}}</p></div></div>
+            <div class="arm-split-card"><div class="arm-split-idx" data-visual-event="item-marker">02</div><div><h4>{{h2-title}}</h4><p>{{h2-body}}</p></div></div>
+            <div class="arm-split-card"><div class="arm-split-idx" data-visual-event="item-marker">03</div><div><h4>{{h3-title}}</h4><p>{{h3-body}}</p></div></div>
+          </div>
+        </div>
+        <div class="arm-split-right" data-visual-event="visual-plate">
+          <div class="arm-split-tag"><span>ARM Observatory Visual Frame</span><span>16:9 Exhibit</span></div>
+          <div style="flex:1; min-height:0;">{{@placeholder slot=figure-caption}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="arm-foot flow-foot">
+      <div class="arm-doe-mark" data-visual-event="signature-mark"></div>
+      <div class="arm-foot-center">{{footer-label}}</div>
+      <div class="arm-foot-right">
+        <span>{{date}}</span>
+        <span class="arm-foot-sep"></span>
+        <span class="arm-foot-page">{{page-no}} / {{page-total}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+</template>
+
+<template id="slide-standard">
+<section class="slide">
+  <div class="arm-shell slide-flow">
+    <div class="arm-banner flow-head">
+      <div class="arm-banner-bg"></div>
+      <div class="arm-banner-left">
+        <div class="arm-eyebrow">{{eyebrow}}</div>
+        <h2 class="arm-banner-title">{{title}}</h2>
+      </div>
+      <svg class="arm-logo" viewBox="972 36 140 50" fill="none" aria-hidden="true" data-visual-event="signature-mark"><path d="M1005.15 73.05 1006.26 69.8 1007.77 65.37 1019.61 65.37 1020.45 67.88 1021.52 71.07C1025.94 70.7 1030.63 70.45 1035.61 70.33L1035.61 59.04 1037.47 59.04C1038.92 59.04 1039.9 59.87 1041.7 64.62 1042.57 66.9 1043.26 68.83 1043.79 70.25 1043.85 70.25 1043.91 70.26 1043.98 70.28 1049.55 70.34 1054.8 70.57 1059.72 70.94L1059.72 49.32 1059.79 49.54 1061.69 55.69 1063.9 62.86 1064.28 64.09 1066.55 71.56C1069.15 71.84 1071.65 72.15 1074.03 72.48L1074.56 70.71 1075.42 67.93 1078.27 58.76 1081.2 49.32 1081.2 73.63C1083.83 74.1 1086.29 74.6 1088.58 75.1L1088.58 38.19 1077.58 38.19 1073.97 50.6 1070.5 62.5 1070.45 62.6 1070.4 62.5 1068.96 57.56 1067.45 52.38 1065.8 46.73 1063.31 38.19 1052.31 38.19 1052.31 69.75C1052.31 69.75 1051.12 66.96 1049.67 63.4 1048.7 61.03 1048.05 59.37 1047.29 58.11 1046.86 57.4 1046.39 56.82 1045.81 56.32L1045.87 56.29C1046.42 56.12 1046.94 55.8 1047.44 55.39 1049.18 53.95 1050.51 51.22 1050.51 48.11 1050.51 45.27 1049.75 42.9 1048.18 41.25 1048 41.06 1047.85 40.84 1047.65 40.67 1045.99 39.24 1043.78 38.59 1040.88 38.34 1040.02 38.27 1039.1 38.23 1038.12 38.21 1037.81 38.21 1037.52 38.2 1037.19 38.2L1028.36 38.2 1028.36 67.37 1027.33 64.55 1023.39 53.74 1018.92 41.46 1017.73 38.2 1009.6 38.2 1007.08 45.42 1006.4 47.37 1003.09 56.84 1002.3 59.11 999.5 67.13 998.66 69.53 996.9 74.56C999.46 74.03 1002.2 73.52 1005.15 73.05ZM1035.6 50.96 1035.6 45.02 1038.51 45.02C1038.71 45.02 1038.88 45.04 1039.07 45.05 1041.68 45.21 1043.23 46.52 1043.23 49.07 1043.23 51.1 1042.1 52.28 1040.13 52.72 1039.53 52.86 1038.87 52.93 1038.13 52.93L1035.6 52.93 1035.6 50.95ZM1011.54 53.36 1012.46 50.51 1013.53 47.21 1015.64 53.51 1017.49 59.04 1009.68 59.04 1011.53 53.36Z" fill="#FFFFFF"/><path d="M974.04 84.26C974.04 84.26 998.33 73.09 1041.41 73.09 1084.49 73.09 1109.04 84.26 1109.04 84.26 1109.04 84.26 1087.37 76.72 1041.41 76.72 995.45 76.72 974.04 84.26 974.04 84.26Z" fill="#FFFFFF"/></svg>
+    </div>
+    <div class="arm-stage flow-stage">
+      <p class="arm-lead">{{lead}}</p>
+      <div class="arm-std-rows">
+        <div class="arm-std-row"><div class="arm-std-diamond" data-visual-event="item-marker">01</div><h4>{{s1-title}}</h4><p>{{s1-body}}</p><span class="arm-std-meta">{{s1-meta}}</span></div>
+        <div class="arm-std-row"><div class="arm-std-diamond" data-visual-event="item-marker">02</div><h4>{{s2-title}}</h4><p>{{s2-body}}</p><span class="arm-std-meta">{{s2-meta}}</span></div>
+        <div class="arm-std-row"><div class="arm-std-diamond" data-visual-event="item-marker">03</div><h4>{{s3-title}}</h4><p>{{s3-body}}</p><span class="arm-std-meta">{{s3-meta}}</span></div>
+        <div class="arm-std-row"><div class="arm-std-diamond" data-visual-event="item-marker">04</div><h4>{{s4-title}}</h4><p>{{s4-body}}</p><span class="arm-std-meta">{{s4-meta}}</span></div>
+      </div>
+      <div class="arm-takeaway"><span class="arm-takeaway-tag">Key Takeaway</span><p>{{takeaway}}</p></div>
+    </div>
+    <div class="arm-foot flow-foot">
+      <div class="arm-doe-mark" data-visual-event="signature-mark"></div>
+      <div class="arm-foot-center">{{footer-label}}</div>
+      <div class="arm-foot-right">
+        <span>{{date}}</span>
+        <span class="arm-foot-sep"></span>
+        <span class="arm-foot-page">{{page-no}} / {{page-total}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+</template>
+
+<template id="slide-comparison">
+<section class="slide">
+  <div class="arm-shell slide-flow">
+    <div class="arm-banner flow-head">
+      <div class="arm-banner-bg"></div>
+      <div class="arm-banner-left">
+        <div class="arm-eyebrow">{{eyebrow}}</div>
+        <h2 class="arm-banner-title">{{title}}</h2>
+      </div>
+      <svg class="arm-logo" viewBox="972 36 140 50" fill="none" aria-hidden="true" data-visual-event="signature-mark"><path d="M1005.15 73.05 1006.26 69.8 1007.77 65.37 1019.61 65.37 1020.45 67.88 1021.52 71.07C1025.94 70.7 1030.63 70.45 1035.61 70.33L1035.61 59.04 1037.47 59.04C1038.92 59.04 1039.9 59.87 1041.7 64.62 1042.57 66.9 1043.26 68.83 1043.79 70.25 1043.85 70.25 1043.91 70.26 1043.98 70.28 1049.55 70.34 1054.8 70.57 1059.72 70.94L1059.72 49.32 1059.79 49.54 1061.69 55.69 1063.9 62.86 1064.28 64.09 1066.55 71.56C1069.15 71.84 1071.65 72.15 1074.03 72.48L1074.56 70.71 1075.42 67.93 1078.27 58.76 1081.2 49.32 1081.2 73.63C1083.83 74.1 1086.29 74.6 1088.58 75.1L1088.58 38.19 1077.58 38.19 1073.97 50.6 1070.5 62.5 1070.45 62.6 1070.4 62.5 1068.96 57.56 1067.45 52.38 1065.8 46.73 1063.31 38.19 1052.31 38.19 1052.31 69.75C1052.31 69.75 1051.12 66.96 1049.67 63.4 1048.7 61.03 1048.05 59.37 1047.29 58.11 1046.86 57.4 1046.39 56.82 1045.81 56.32L1045.87 56.29C1046.42 56.12 1046.94 55.8 1047.44 55.39 1049.18 53.95 1050.51 51.22 1050.51 48.11 1050.51 45.27 1049.75 42.9 1048.18 41.25 1048 41.06 1047.85 40.84 1047.65 40.67 1045.99 39.24 1043.78 38.59 1040.88 38.34 1040.02 38.27 1039.1 38.23 1038.12 38.21 1037.81 38.21 1037.52 38.2 1037.19 38.2L1028.36 38.2 1028.36 67.37 1027.33 64.55 1023.39 53.74 1018.92 41.46 1017.73 38.2 1009.6 38.2 1007.08 45.42 1006.4 47.37 1003.09 56.84 1002.3 59.11 999.5 67.13 998.66 69.53 996.9 74.56C999.46 74.03 1002.2 73.52 1005.15 73.05ZM1035.6 50.96 1035.6 45.02 1038.51 45.02C1038.71 45.02 1038.88 45.04 1039.07 45.05 1041.68 45.21 1043.23 46.52 1043.23 49.07 1043.23 51.1 1042.1 52.28 1040.13 52.72 1039.53 52.86 1038.87 52.93 1038.13 52.93L1035.6 52.93 1035.6 50.95ZM1011.54 53.36 1012.46 50.51 1013.53 47.21 1015.64 53.51 1017.49 59.04 1009.68 59.04 1011.53 53.36Z" fill="#FFFFFF"/><path d="M974.04 84.26C974.04 84.26 998.33 73.09 1041.41 73.09 1084.49 73.09 1109.04 84.26 1109.04 84.26 1109.04 84.26 1087.37 76.72 1041.41 76.72 995.45 76.72 974.04 84.26 974.04 84.26Z" fill="#FFFFFF"/></svg>
+    </div>
+    <div class="arm-stage flow-stage">
+      <div class="arm-cmp-grid">
+        <div class="arm-cmp-col">
+          <div class="arm-cmp-head" data-visual-event="visual-plate"><h3>{{left-title}}</h3><span class="arm-cmp-tag">{{left-tag}}</span></div>
+          <div class="arm-list" style="flex:1; display:flex; flex-direction:column;">{{@list slot=left-items}}</div>
+        </div>
+        <div class="arm-cmp-col alt">
+          <div class="arm-cmp-head" data-visual-event="visual-plate"><h3>{{right-title}}</h3><span class="arm-cmp-tag">{{right-tag}}</span></div>
+          <div class="arm-list" style="flex:1; display:flex; flex-direction:column;">{{@list slot=right-items}}</div>
+        </div>
+      </div>
+      <div class="arm-takeaway"><span class="arm-takeaway-tag">Synthesis</span><p>{{takeaway}}</p></div>
+    </div>
+    <div class="arm-foot flow-foot">
+      <div class="arm-doe-mark" data-visual-event="signature-mark"></div>
+      <div class="arm-foot-center">{{footer-label}}</div>
+      <div class="arm-foot-right">
+        <span>{{date}}</span>
+        <span class="arm-foot-sep"></span>
+        <span class="arm-foot-page">{{page-no}} / {{page-total}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+</template>
+
+<template id="slide-picture-caption">
+<section class="slide">
+  <div class="arm-shell slide-flow">
+    <div class="arm-banner flow-head">
+      <div class="arm-banner-bg"></div>
+      <div class="arm-banner-left">
+        <div class="arm-eyebrow">{{eyebrow}}</div>
+        <h2 class="arm-banner-title">{{title}}</h2>
+      </div>
+      <svg class="arm-logo" viewBox="972 36 140 50" fill="none" aria-hidden="true" data-visual-event="signature-mark"><path d="M1005.15 73.05 1006.26 69.8 1007.77 65.37 1019.61 65.37 1020.45 67.88 1021.52 71.07C1025.94 70.7 1030.63 70.45 1035.61 70.33L1035.61 59.04 1037.47 59.04C1038.92 59.04 1039.9 59.87 1041.7 64.62 1042.57 66.9 1043.26 68.83 1043.79 70.25 1043.85 70.25 1043.91 70.26 1043.98 70.28 1049.55 70.34 1054.8 70.57 1059.72 70.94L1059.72 49.32 1059.79 49.54 1061.69 55.69 1063.9 62.86 1064.28 64.09 1066.55 71.56C1069.15 71.84 1071.65 72.15 1074.03 72.48L1074.56 70.71 1075.42 67.93 1078.27 58.76 1081.2 49.32 1081.2 73.63C1083.83 74.1 1086.29 74.6 1088.58 75.1L1088.58 38.19 1077.58 38.19 1073.97 50.6 1070.5 62.5 1070.45 62.6 1070.4 62.5 1068.96 57.56 1067.45 52.38 1065.8 46.73 1063.31 38.19 1052.31 38.19 1052.31 69.75C1052.31 69.75 1051.12 66.96 1049.67 63.4 1048.7 61.03 1048.05 59.37 1047.29 58.11 1046.86 57.4 1046.39 56.82 1045.81 56.32L1045.87 56.29C1046.42 56.12 1046.94 55.8 1047.44 55.39 1049.18 53.95 1050.51 51.22 1050.51 48.11 1050.51 45.27 1049.75 42.9 1048.18 41.25 1048 41.06 1047.85 40.84 1047.65 40.67 1045.99 39.24 1043.78 38.59 1040.88 38.34 1040.02 38.27 1039.1 38.23 1038.12 38.21 1037.81 38.21 1037.52 38.2 1037.19 38.2L1028.36 38.2 1028.36 67.37 1027.33 64.55 1023.39 53.74 1018.92 41.46 1017.73 38.2 1009.6 38.2 1007.08 45.42 1006.4 47.37 1003.09 56.84 1002.3 59.11 999.5 67.13 998.66 69.53 996.9 74.56C999.46 74.03 1002.2 73.52 1005.15 73.05ZM1035.6 50.96 1035.6 45.02 1038.51 45.02C1038.71 45.02 1038.88 45.04 1039.07 45.05 1041.68 45.21 1043.23 46.52 1043.23 49.07 1043.23 51.1 1042.1 52.28 1040.13 52.72 1039.53 52.86 1038.87 52.93 1038.13 52.93L1035.6 52.93 1035.6 50.95ZM1011.54 53.36 1012.46 50.51 1013.53 47.21 1015.64 53.51 1017.49 59.04 1009.68 59.04 1011.53 53.36Z" fill="#FFFFFF"/><path d="M974.04 84.26C974.04 84.26 998.33 73.09 1041.41 73.09 1084.49 73.09 1109.04 84.26 1109.04 84.26 1109.04 84.26 1087.37 76.72 1041.41 76.72 995.45 76.72 974.04 84.26 974.04 84.26Z" fill="#FFFFFF"/></svg>
+    </div>
+    <div class="arm-stage flow-stage">
+      <div class="arm-pic-stage">
+        <div class="arm-pic-frame" data-visual-event="visual-plate">
+          {{@placeholder slot=figure-caption}}
+        </div>
+        <div class="arm-pic-side">
+          <div class="arm-pic-kpis">
+            <div class="arm-pic-kpi"><span class="v" data-visual-event="oversized-number">{{m1-value}}</span><span class="l">{{m1-label}}</span></div>
+            <div class="arm-pic-kpi"><span class="v" data-visual-event="oversized-number">{{m2-value}}</span><span class="l">{{m2-label}}</span></div>
+            <div class="arm-pic-kpi"><span class="v" data-visual-event="oversized-number">{{m3-value}}</span><span class="l">{{m3-label}}</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="arm-pic-caption">
+        <h4>{{caption-title}}</h4>
+        <p>{{caption-body}}</p>
+        <span class="arm-std-meta">{{site-code}}</span>
+      </div>
+    </div>
+    <div class="arm-foot flow-foot">
+      <div class="arm-doe-mark" data-visual-event="signature-mark"></div>
+      <div class="arm-foot-center">{{footer-label}}</div>
+      <div class="arm-foot-right">
+        <span>{{date}}</span>
+        <span class="arm-foot-sep"></span>
+        <span class="arm-foot-page">{{page-no}} / {{page-total}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+</template>
+
+<template id="slide-metrics">
+<section class="slide">
+  <div class="arm-shell slide-flow">
+    <div class="arm-banner flow-head">
+      <div class="arm-banner-bg"></div>
+      <div class="arm-banner-left">
+        <div class="arm-eyebrow">{{eyebrow}}</div>
+        <h2 class="arm-banner-title">{{title}}</h2>
+      </div>
+      <svg class="arm-logo" viewBox="972 36 140 50" fill="none" aria-hidden="true" data-visual-event="signature-mark"><path d="M1005.15 73.05 1006.26 69.8 1007.77 65.37 1019.61 65.37 1020.45 67.88 1021.52 71.07C1025.94 70.7 1030.63 70.45 1035.61 70.33L1035.61 59.04 1037.47 59.04C1038.92 59.04 1039.9 59.87 1041.7 64.62 1042.57 66.9 1043.26 68.83 1043.79 70.25 1043.85 70.25 1043.91 70.26 1043.98 70.28 1049.55 70.34 1054.8 70.57 1059.72 70.94L1059.72 49.32 1059.79 49.54 1061.69 55.69 1063.9 62.86 1064.28 64.09 1066.55 71.56C1069.15 71.84 1071.65 72.15 1074.03 72.48L1074.56 70.71 1075.42 67.93 1078.27 58.76 1081.2 49.32 1081.2 73.63C1083.83 74.1 1086.29 74.6 1088.58 75.1L1088.58 38.19 1077.58 38.19 1073.97 50.6 1070.5 62.5 1070.45 62.6 1070.4 62.5 1068.96 57.56 1067.45 52.38 1065.8 46.73 1063.31 38.19 1052.31 38.19 1052.31 69.75C1052.31 69.75 1051.12 66.96 1049.67 63.4 1048.7 61.03 1048.05 59.37 1047.29 58.11 1046.86 57.4 1046.39 56.82 1045.81 56.32L1045.87 56.29C1046.42 56.12 1046.94 55.8 1047.44 55.39 1049.18 53.95 1050.51 51.22 1050.51 48.11 1050.51 45.27 1049.75 42.9 1048.18 41.25 1048 41.06 1047.85 40.84 1047.65 40.67 1045.99 39.24 1043.78 38.59 1040.88 38.34 1040.02 38.27 1039.1 38.23 1038.12 38.21 1037.81 38.21 1037.52 38.2 1037.19 38.2L1028.36 38.2 1028.36 67.37 1027.33 64.55 1023.39 53.74 1018.92 41.46 1017.73 38.2 1009.6 38.2 1007.08 45.42 1006.4 47.37 1003.09 56.84 1002.3 59.11 999.5 67.13 998.66 69.53 996.9 74.56C999.46 74.03 1002.2 73.52 1005.15 73.05ZM1035.6 50.96 1035.6 45.02 1038.51 45.02C1038.71 45.02 1038.88 45.04 1039.07 45.05 1041.68 45.21 1043.23 46.52 1043.23 49.07 1043.23 51.1 1042.1 52.28 1040.13 52.72 1039.53 52.86 1038.87 52.93 1038.13 52.93L1035.6 52.93 1035.6 50.95ZM1011.54 53.36 1012.46 50.51 1013.53 47.21 1015.64 53.51 1017.49 59.04 1009.68 59.04 1011.53 53.36Z" fill="#FFFFFF"/><path d="M974.04 84.26C974.04 84.26 998.33 73.09 1041.41 73.09 1084.49 73.09 1109.04 84.26 1109.04 84.26 1109.04 84.26 1087.37 76.72 1041.41 76.72 995.45 76.72 974.04 84.26 974.04 84.26Z" fill="#FFFFFF"/></svg>
+    </div>
+    <div class="arm-stage flow-stage">
+      <div class="arm-met-grid">
+        <div class="arm-met-hero" data-visual-event="visual-plate">
+          <div class="arm-met-val-row">
+            <span class="arm-met-val" data-visual-event="oversized-number">{{hero-value}}</span>
+            <span class="arm-met-unit">{{hero-unit}}</span>
+          </div>
+          <div class="arm-met-lbl">{{hero-label}}</div>
+          <p class="arm-met-ctx">{{hero-context}}</p>
+        </div>
+        <div class="arm-met-cards">
+          <div class="arm-met-card"><span class="kv" data-visual-event="item-marker">{{k1-value}}</span><span class="kl">{{k1-label}}</span><span class="kn">{{k1-note}}</span></div>
+          <div class="arm-met-card"><span class="kv" data-visual-event="item-marker">{{k2-value}}</span><span class="kl">{{k2-label}}</span><span class="kn">{{k2-note}}</span></div>
+          <div class="arm-met-card"><span class="kv" data-visual-event="item-marker">{{k3-value}}</span><span class="kl">{{k3-label}}</span><span class="kn">{{k3-note}}</span></div>
+          <div class="arm-met-card"><span class="kv" data-visual-event="item-marker">{{k4-value}}</span><span class="kl">{{k4-label}}</span><span class="kn">{{k4-note}}</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="arm-foot flow-foot">
+      <div class="arm-doe-mark" data-visual-event="signature-mark"></div>
+      <div class="arm-foot-center">{{footer-label}}</div>
+      <div class="arm-foot-right">
+        <span>{{date}}</span>
+        <span class="arm-foot-sep"></span>
+        <span class="arm-foot-page">{{page-no}} / {{page-total}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+</template>
+
+<template id="slide-time-series">
+<section class="slide" data-density="data-dense">
+  <div class="arm-shell slide-flow">
+    <div class="arm-banner flow-head">
+      <div class="arm-banner-bg"></div>
+      <div class="arm-banner-left">
+        <div class="arm-eyebrow">{{eyebrow}}</div>
+        <h2 class="arm-banner-title">{{title}}</h2>
+      </div>
+      <svg class="arm-logo" viewBox="972 36 140 50" fill="none" aria-hidden="true" data-visual-event="signature-mark"><path d="M1005.15 73.05 1006.26 69.8 1007.77 65.37 1019.61 65.37 1020.45 67.88 1021.52 71.07C1025.94 70.7 1030.63 70.45 1035.61 70.33L1035.61 59.04 1037.47 59.04C1038.92 59.04 1039.9 59.87 1041.7 64.62 1042.57 66.9 1043.26 68.83 1043.79 70.25 1043.85 70.25 1043.91 70.26 1043.98 70.28 1049.55 70.34 1054.8 70.57 1059.72 70.94L1059.72 49.32 1059.79 49.54 1061.69 55.69 1063.9 62.86 1064.28 64.09 1066.55 71.56C1069.15 71.84 1071.65 72.15 1074.03 72.48L1074.56 70.71 1075.42 67.93 1078.27 58.76 1081.2 49.32 1081.2 73.63C1083.83 74.1 1086.29 74.6 1088.58 75.1L1088.58 38.19 1077.58 38.19 1073.97 50.6 1070.5 62.5 1070.45 62.6 1070.4 62.5 1068.96 57.56 1067.45 52.38 1065.8 46.73 1063.31 38.19 1052.31 38.19 1052.31 69.75C1052.31 69.75 1051.12 66.96 1049.67 63.4 1048.7 61.03 1048.05 59.37 1047.29 58.11 1046.86 57.4 1046.39 56.82 1045.81 56.32L1045.87 56.29C1046.42 56.12 1046.94 55.8 1047.44 55.39 1049.18 53.95 1050.51 51.22 1050.51 48.11 1050.51 45.27 1049.75 42.9 1048.18 41.25 1048 41.06 1047.85 40.84 1047.65 40.67 1045.99 39.24 1043.78 38.59 1040.88 38.34 1040.02 38.27 1039.1 38.23 1038.12 38.21 1037.81 38.21 1037.52 38.2 1037.19 38.2L1028.36 38.2 1028.36 67.37 1027.33 64.55 1023.39 53.74 1018.92 41.46 1017.73 38.2 1009.6 38.2 1007.08 45.42 1006.4 47.37 1003.09 56.84 1002.3 59.11 999.5 67.13 998.66 69.53 996.9 74.56C999.46 74.03 1002.2 73.52 1005.15 73.05ZM1035.6 50.96 1035.6 45.02 1038.51 45.02C1038.71 45.02 1038.88 45.04 1039.07 45.05 1041.68 45.21 1043.23 46.52 1043.23 49.07 1043.23 51.1 1042.1 52.28 1040.13 52.72 1039.53 52.86 1038.87 52.93 1038.13 52.93L1035.6 52.93 1035.6 50.95ZM1011.54 53.36 1012.46 50.51 1013.53 47.21 1015.64 53.51 1017.49 59.04 1009.68 59.04 1011.53 53.36Z" fill="#FFFFFF"/><path d="M974.04 84.26C974.04 84.26 998.33 73.09 1041.41 73.09 1084.49 73.09 1109.04 84.26 1109.04 84.26 1109.04 84.26 1087.37 76.72 1041.41 76.72 995.45 76.72 974.04 84.26 974.04 84.26Z" fill="#FFFFFF"/></svg>
+    </div>
+    <div class="arm-stage flow-stage">
+      <div class="arm-ts-grid">
+        <div class="arm-chart-panel">
+          <div class="arm-chart-head"><span class="arm-chart-title">{{chart-title}}</span></div>
+          <div style="flex:1; min-height:0; display:flex; align-items:center;">
+            {{@chart type=line data=chart-data labels=chart-labels unit=chart-unit note=chart-note compareData=compare-data compareLabel=compare-label primaryLabel=primary-label yAxis=1 accent=#00BD70 base=#194173 ink=#194173 muted=#686B70}}
+          </div>
+        </div>
+        <div class="arm-ts-side">
+          <div class="arm-ts-box" data-visual-event="visual-plate">
+            <h4>{{finding-title}}</h4>
+            <p>{{finding-body}}</p>
+          </div>
+          <div class="arm-ts-stats">
+            <div class="arm-ts-stat"><span class="sl">{{f1-label}}</span><span class="sv" data-visual-event="item-marker">{{f1-value}}</span></div>
+            <div class="arm-ts-stat"><span class="sl">{{f2-label}}</span><span class="sv" data-visual-event="item-marker">{{f2-value}}</span></div>
+            <div class="arm-ts-stat"><span class="sl">{{f3-label}}</span><span class="sv" data-visual-event="item-marker">{{f3-value}}</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="arm-foot flow-foot">
+      <div class="arm-doe-mark" data-visual-event="signature-mark"></div>
+      <div class="arm-foot-center">{{footer-label}}</div>
+      <div class="arm-foot-right">
+        <span>{{date}}</span>
+        <span class="arm-foot-sep"></span>
+        <span class="arm-foot-page">{{page-no}} / {{page-total}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+</template>
+
+<template id="slide-bar-analysis">
+<section class="slide" data-density="data-dense">
+  <div class="arm-shell slide-flow">
+    <div class="arm-banner flow-head">
+      <div class="arm-banner-bg"></div>
+      <div class="arm-banner-left">
+        <div class="arm-eyebrow">{{eyebrow}}</div>
+        <h2 class="arm-banner-title">{{title}}</h2>
+      </div>
+      <svg class="arm-logo" viewBox="972 36 140 50" fill="none" aria-hidden="true" data-visual-event="signature-mark"><path d="M1005.15 73.05 1006.26 69.8 1007.77 65.37 1019.61 65.37 1020.45 67.88 1021.52 71.07C1025.94 70.7 1030.63 70.45 1035.61 70.33L1035.61 59.04 1037.47 59.04C1038.92 59.04 1039.9 59.87 1041.7 64.62 1042.57 66.9 1043.26 68.83 1043.79 70.25 1043.85 70.25 1043.91 70.26 1043.98 70.28 1049.55 70.34 1054.8 70.57 1059.72 70.94L1059.72 49.32 1059.79 49.54 1061.69 55.69 1063.9 62.86 1064.28 64.09 1066.55 71.56C1069.15 71.84 1071.65 72.15 1074.03 72.48L1074.56 70.71 1075.42 67.93 1078.27 58.76 1081.2 49.32 1081.2 73.63C1083.83 74.1 1086.29 74.6 1088.58 75.1L1088.58 38.19 1077.58 38.19 1073.97 50.6 1070.5 62.5 1070.45 62.6 1070.4 62.5 1068.96 57.56 1067.45 52.38 1065.8 46.73 1063.31 38.19 1052.31 38.19 1052.31 69.75C1052.31 69.75 1051.12 66.96 1049.67 63.4 1048.7 61.03 1048.05 59.37 1047.29 58.11 1046.86 57.4 1046.39 56.82 1045.81 56.32L1045.87 56.29C1046.42 56.12 1046.94 55.8 1047.44 55.39 1049.18 53.95 1050.51 51.22 1050.51 48.11 1050.51 45.27 1049.75 42.9 1048.18 41.25 1048 41.06 1047.85 40.84 1047.65 40.67 1045.99 39.24 1043.78 38.59 1040.88 38.34 1040.02 38.27 1039.1 38.23 1038.12 38.21 1037.81 38.21 1037.52 38.2 1037.19 38.2L1028.36 38.2 1028.36 67.37 1027.33 64.55 1023.39 53.74 1018.92 41.46 1017.73 38.2 1009.6 38.2 1007.08 45.42 1006.4 47.37 1003.09 56.84 1002.3 59.11 999.5 67.13 998.66 69.53 996.9 74.56C999.46 74.03 1002.2 73.52 1005.15 73.05ZM1035.6 50.96 1035.6 45.02 1038.51 45.02C1038.71 45.02 1038.88 45.04 1039.07 45.05 1041.68 45.21 1043.23 46.52 1043.23 49.07 1043.23 51.1 1042.1 52.28 1040.13 52.72 1039.53 52.86 1038.87 52.93 1038.13 52.93L1035.6 52.93 1035.6 50.95ZM1011.54 53.36 1012.46 50.51 1013.53 47.21 1015.64 53.51 1017.49 59.04 1009.68 59.04 1011.53 53.36Z" fill="#FFFFFF"/><path d="M974.04 84.26C974.04 84.26 998.33 73.09 1041.41 73.09 1084.49 73.09 1109.04 84.26 1109.04 84.26 1109.04 84.26 1087.37 76.72 1041.41 76.72 995.45 76.72 974.04 84.26 974.04 84.26Z" fill="#FFFFFF"/></svg>
+    </div>
+    <div class="arm-stage flow-stage">
+      <div class="arm-bar-stage">
+        <div class="arm-chart-panel">
+          <div class="arm-chart-head"><span class="arm-chart-title">{{chart-title}}</span></div>
+          <div style="flex:1; min-height:0; display:flex; align-items:center;">
+            {{@chart type=bar data=chart-data labels=chart-labels unit=chart-unit highlight=chart-highlight note=chart-note yAxis=1 accent=#0070C1 base=#194173 ink=#194173 muted=#686B70}}
+          </div>
+        </div>
+        <div class="arm-bar-cards">
+          <div class="arm-bar-card"><div class="arm-bar-card-top"><h4>{{c1-title}}</h4><span class="st" data-visual-event="item-marker">{{c1-stat}}</span></div><p>{{c1-body}}</p></div>
+          <div class="arm-bar-card"><div class="arm-bar-card-top"><h4>{{c2-title}}</h4><span class="st" data-visual-event="item-marker">{{c2-stat}}</span></div><p>{{c2-body}}</p></div>
+          <div class="arm-bar-card"><div class="arm-bar-card-top"><h4>{{c3-title}}</h4><span class="st" data-visual-event="item-marker">{{c3-stat}}</span></div><p>{{c3-body}}</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="arm-foot flow-foot">
+      <div class="arm-doe-mark" data-visual-event="signature-mark"></div>
+      <div class="arm-foot-center">{{footer-label}}</div>
+      <div class="arm-foot-right">
+        <span>{{date}}</span>
+        <span class="arm-foot-sep"></span>
+        <span class="arm-foot-page">{{page-no}} / {{page-total}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+</template>
+
+<template id="slide-instrument-table">
+<section class="slide" data-density="data-dense">
+  <div class="arm-shell slide-flow">
+    <div class="arm-banner flow-head">
+      <div class="arm-banner-bg"></div>
+      <div class="arm-banner-left">
+        <div class="arm-eyebrow">{{eyebrow}}</div>
+        <h2 class="arm-banner-title">{{title}}</h2>
+      </div>
+      <svg class="arm-logo" viewBox="972 36 140 50" fill="none" aria-hidden="true" data-visual-event="signature-mark"><path d="M1005.15 73.05 1006.26 69.8 1007.77 65.37 1019.61 65.37 1020.45 67.88 1021.52 71.07C1025.94 70.7 1030.63 70.45 1035.61 70.33L1035.61 59.04 1037.47 59.04C1038.92 59.04 1039.9 59.87 1041.7 64.62 1042.57 66.9 1043.26 68.83 1043.79 70.25 1043.85 70.25 1043.91 70.26 1043.98 70.28 1049.55 70.34 1054.8 70.57 1059.72 70.94L1059.72 49.32 1059.79 49.54 1061.69 55.69 1063.9 62.86 1064.28 64.09 1066.55 71.56C1069.15 71.84 1071.65 72.15 1074.03 72.48L1074.56 70.71 1075.42 67.93 1078.27 58.76 1081.2 49.32 1081.2 73.63C1083.83 74.1 1086.29 74.6 1088.58 75.1L1088.58 38.19 1077.58 38.19 1073.97 50.6 1070.5 62.5 1070.45 62.6 1070.4 62.5 1068.96 57.56 1067.45 52.38 1065.8 46.73 1063.31 38.19 1052.31 38.19 1052.31 69.75C1052.31 69.75 1051.12 66.96 1049.67 63.4 1048.7 61.03 1048.05 59.37 1047.29 58.11 1046.86 57.4 1046.39 56.82 1045.81 56.32L1045.87 56.29C1046.42 56.12 1046.94 55.8 1047.44 55.39 1049.18 53.95 1050.51 51.22 1050.51 48.11 1050.51 45.27 1049.75 42.9 1048.18 41.25 1048 41.06 1047.85 40.84 1047.65 40.67 1045.99 39.24 1043.78 38.59 1040.88 38.34 1040.02 38.27 1039.1 38.23 1038.12 38.21 1037.81 38.21 1037.52 38.2 1037.19 38.2L1028.36 38.2 1028.36 67.37 1027.33 64.55 1023.39 53.74 1018.92 41.46 1017.73 38.2 1009.6 38.2 1007.08 45.42 1006.4 47.37 1003.09 56.84 1002.3 59.11 999.5 67.13 998.66 69.53 996.9 74.56C999.46 74.03 1002.2 73.52 1005.15 73.05ZM1035.6 50.96 1035.6 45.02 1038.51 45.02C1038.71 45.02 1038.88 45.04 1039.07 45.05 1041.68 45.21 1043.23 46.52 1043.23 49.07 1043.23 51.1 1042.1 52.28 1040.13 52.72 1039.53 52.86 1038.87 52.93 1038.13 52.93L1035.6 52.93 1035.6 50.95ZM1011.54 53.36 1012.46 50.51 1013.53 47.21 1015.64 53.51 1017.49 59.04 1009.68 59.04 1011.53 53.36Z" fill="#FFFFFF"/><path d="M974.04 84.26C974.04 84.26 998.33 73.09 1041.41 73.09 1084.49 73.09 1109.04 84.26 1109.04 84.26 1109.04 84.26 1087.37 76.72 1041.41 76.72 995.45 76.72 974.04 84.26 974.04 84.26Z" fill="#FFFFFF"/></svg>
+    </div>
+    <div class="arm-stage flow-stage">
+      <p class="arm-lead">{{lead}}</p>
+      <div class="arm-tbl-wrap">
+        {{@table rows=row-headers cols=col-headers cells=cells}}
+      </div>
+      <div class="arm-takeaway"><span class="arm-takeaway-tag">Specification Note</span><p>{{takeaway}}</p></div>
+    </div>
+    <div class="arm-foot flow-foot">
+      <div class="arm-doe-mark" data-visual-event="signature-mark"></div>
+      <div class="arm-foot-center">{{footer-label}}</div>
+      <div class="arm-foot-right">
+        <span>{{date}}</span>
+        <span class="arm-foot-sep"></span>
+        <span class="arm-foot-page">{{page-no}} / {{page-total}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+</template>
+
+<template id="slide-architecture">
+<section class="slide">
+  <div class="arm-shell slide-flow">
+    <div class="arm-banner flow-head">
+      <div class="arm-banner-bg"></div>
+      <div class="arm-banner-left">
+        <div class="arm-eyebrow">{{eyebrow}}</div>
+        <h2 class="arm-banner-title">{{title}}</h2>
+      </div>
+      <svg class="arm-logo" viewBox="972 36 140 50" fill="none" aria-hidden="true" data-visual-event="signature-mark"><path d="M1005.15 73.05 1006.26 69.8 1007.77 65.37 1019.61 65.37 1020.45 67.88 1021.52 71.07C1025.94 70.7 1030.63 70.45 1035.61 70.33L1035.61 59.04 1037.47 59.04C1038.92 59.04 1039.9 59.87 1041.7 64.62 1042.57 66.9 1043.26 68.83 1043.79 70.25 1043.85 70.25 1043.91 70.26 1043.98 70.28 1049.55 70.34 1054.8 70.57 1059.72 70.94L1059.72 49.32 1059.79 49.54 1061.69 55.69 1063.9 62.86 1064.28 64.09 1066.55 71.56C1069.15 71.84 1071.65 72.15 1074.03 72.48L1074.56 70.71 1075.42 67.93 1078.27 58.76 1081.2 49.32 1081.2 73.63C1083.83 74.1 1086.29 74.6 1088.58 75.1L1088.58 38.19 1077.58 38.19 1073.97 50.6 1070.5 62.5 1070.45 62.6 1070.4 62.5 1068.96 57.56 1067.45 52.38 1065.8 46.73 1063.31 38.19 1052.31 38.19 1052.31 69.75C1052.31 69.75 1051.12 66.96 1049.67 63.4 1048.7 61.03 1048.05 59.37 1047.29 58.11 1046.86 57.4 1046.39 56.82 1045.81 56.32L1045.87 56.29C1046.42 56.12 1046.94 55.8 1047.44 55.39 1049.18 53.95 1050.51 51.22 1050.51 48.11 1050.51 45.27 1049.75 42.9 1048.18 41.25 1048 41.06 1047.85 40.84 1047.65 40.67 1045.99 39.24 1043.78 38.59 1040.88 38.34 1040.02 38.27 1039.1 38.23 1038.12 38.21 1037.81 38.21 1037.52 38.2 1037.19 38.2L1028.36 38.2 1028.36 67.37 1027.33 64.55 1023.39 53.74 1018.92 41.46 1017.73 38.2 1009.6 38.2 1007.08 45.42 1006.4 47.37 1003.09 56.84 1002.3 59.11 999.5 67.13 998.66 69.53 996.9 74.56C999.46 74.03 1002.2 73.52 1005.15 73.05ZM1035.6 50.96 1035.6 45.02 1038.51 45.02C1038.71 45.02 1038.88 45.04 1039.07 45.05 1041.68 45.21 1043.23 46.52 1043.23 49.07 1043.23 51.1 1042.1 52.28 1040.13 52.72 1039.53 52.86 1038.87 52.93 1038.13 52.93L1035.6 52.93 1035.6 50.95ZM1011.54 53.36 1012.46 50.51 1013.53 47.21 1015.64 53.51 1017.49 59.04 1009.68 59.04 1011.53 53.36Z" fill="#FFFFFF"/><path d="M974.04 84.26C974.04 84.26 998.33 73.09 1041.41 73.09 1084.49 73.09 1109.04 84.26 1109.04 84.26 1109.04 84.26 1087.37 76.72 1041.41 76.72 995.45 76.72 974.04 84.26 974.04 84.26Z" fill="#FFFFFF"/></svg>
+    </div>
+    <div class="arm-stage flow-stage">
+      <div class="arm-arch-grid">
+        <div class="arm-arch-rail" data-visual-event="visual-plate">
+          <span class="rl">{{rail-label}}</span>
+          <h3>{{rail-title}}</h3>
+          <p>{{rail-sub}}</p>
+        </div>
+        <div class="arm-arch-tiers">
+          <div class="arm-arch-tier">
+            <div class="arm-arch-th"><span class="arm-arch-code" data-visual-event="item-marker">{{t1-code}}</span><h4>{{t1-name}}</h4></div>
+            <div class="arm-arch-cell">{{t1-a}}</div>
+            <div class="arm-arch-cell">{{t1-b}}</div>
+            <div class="arm-arch-cell">{{t1-c}}</div>
+          </div>
+          <div class="arm-arch-tier">
+            <div class="arm-arch-th"><span class="arm-arch-code" data-visual-event="item-marker">{{t2-code}}</span><h4>{{t2-name}}</h4></div>
+            <div class="arm-arch-cell">{{t2-a}}</div>
+            <div class="arm-arch-cell">{{t2-b}}</div>
+            <div class="arm-arch-cell">{{t2-c}}</div>
+          </div>
+          <div class="arm-arch-tier">
+            <div class="arm-arch-th"><span class="arm-arch-code" data-visual-event="item-marker">{{t3-code}}</span><h4>{{t3-name}}</h4></div>
+            <div class="arm-arch-cell">{{t3-a}}</div>
+            <div class="arm-arch-cell">{{t3-b}}</div>
+            <div class="arm-arch-cell">{{t3-c}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="arm-foot flow-foot">
+      <div class="arm-doe-mark" data-visual-event="signature-mark"></div>
+      <div class="arm-foot-center">{{footer-label}}</div>
+      <div class="arm-foot-right">
+        <span>{{date}}</span>
+        <span class="arm-foot-sep"></span>
+        <span class="arm-foot-page">{{page-no}} / {{page-total}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+</template>
+
+<template id="slide-roadmap">
+<section class="slide">
+  <div class="arm-shell slide-flow">
+    <div class="arm-banner flow-head">
+      <div class="arm-banner-bg"></div>
+      <div class="arm-banner-left">
+        <div class="arm-eyebrow">{{eyebrow}}</div>
+        <h2 class="arm-banner-title">{{title}}</h2>
+      </div>
+      <svg class="arm-logo" viewBox="972 36 140 50" fill="none" aria-hidden="true" data-visual-event="signature-mark"><path d="M1005.15 73.05 1006.26 69.8 1007.77 65.37 1019.61 65.37 1020.45 67.88 1021.52 71.07C1025.94 70.7 1030.63 70.45 1035.61 70.33L1035.61 59.04 1037.47 59.04C1038.92 59.04 1039.9 59.87 1041.7 64.62 1042.57 66.9 1043.26 68.83 1043.79 70.25 1043.85 70.25 1043.91 70.26 1043.98 70.28 1049.55 70.34 1054.8 70.57 1059.72 70.94L1059.72 49.32 1059.79 49.54 1061.69 55.69 1063.9 62.86 1064.28 64.09 1066.55 71.56C1069.15 71.84 1071.65 72.15 1074.03 72.48L1074.56 70.71 1075.42 67.93 1078.27 58.76 1081.2 49.32 1081.2 73.63C1083.83 74.1 1086.29 74.6 1088.58 75.1L1088.58 38.19 1077.58 38.19 1073.97 50.6 1070.5 62.5 1070.45 62.6 1070.4 62.5 1068.96 57.56 1067.45 52.38 1065.8 46.73 1063.31 38.19 1052.31 38.19 1052.31 69.75C1052.31 69.75 1051.12 66.96 1049.67 63.4 1048.7 61.03 1048.05 59.37 1047.29 58.11 1046.86 57.4 1046.39 56.82 1045.81 56.32L1045.87 56.29C1046.42 56.12 1046.94 55.8 1047.44 55.39 1049.18 53.95 1050.51 51.22 1050.51 48.11 1050.51 45.27 1049.75 42.9 1048.18 41.25 1048 41.06 1047.85 40.84 1047.65 40.67 1045.99 39.24 1043.78 38.59 1040.88 38.34 1040.02 38.27 1039.1 38.23 1038.12 38.21 1037.81 38.21 1037.52 38.2 1037.19 38.2L1028.36 38.2 1028.36 67.37 1027.33 64.55 1023.39 53.74 1018.92 41.46 1017.73 38.2 1009.6 38.2 1007.08 45.42 1006.4 47.37 1003.09 56.84 1002.3 59.11 999.5 67.13 998.66 69.53 996.9 74.56C999.46 74.03 1002.2 73.52 1005.15 73.05ZM1035.6 50.96 1035.6 45.02 1038.51 45.02C1038.71 45.02 1038.88 45.04 1039.07 45.05 1041.68 45.21 1043.23 46.52 1043.23 49.07 1043.23 51.1 1042.1 52.28 1040.13 52.72 1039.53 52.86 1038.87 52.93 1038.13 52.93L1035.6 52.93 1035.6 50.95ZM1011.54 53.36 1012.46 50.51 1013.53 47.21 1015.64 53.51 1017.49 59.04 1009.68 59.04 1011.53 53.36Z" fill="#FFFFFF"/><path d="M974.04 84.26C974.04 84.26 998.33 73.09 1041.41 73.09 1084.49 73.09 1109.04 84.26 1109.04 84.26 1109.04 84.26 1087.37 76.72 1041.41 76.72 995.45 76.72 974.04 84.26 974.04 84.26Z" fill="#FFFFFF"/></svg>
+    </div>
+    <div class="arm-stage flow-stage">
+      <div class="arm-road-grid">
+        <div class="arm-road-col">
+          <div class="arm-road-head" data-visual-event="visual-plate"><h4>{{p1-name}}</h4><span class="arm-road-code" data-visual-event="item-marker">{{p1-code}}</span></div>
+          <div class="arm-list" style="flex:1; display:flex; flex-direction:column;">{{@list slot=p1-items}}</div>
+        </div>
+        <div class="arm-road-col">
+          <div class="arm-road-head" data-visual-event="visual-plate"><h4>{{p2-name}}</h4><span class="arm-road-code" data-visual-event="item-marker">{{p2-code}}</span></div>
+          <div class="arm-list" style="flex:1; display:flex; flex-direction:column;">{{@list slot=p2-items}}</div>
+        </div>
+        <div class="arm-road-col">
+          <div class="arm-road-head" data-visual-event="visual-plate"><h4>{{p3-name}}</h4><span class="arm-road-code" data-visual-event="item-marker">{{p3-code}}</span></div>
+          <div class="arm-list" style="flex:1; display:flex; flex-direction:column;">{{@list slot=p3-items}}</div>
+        </div>
+      </div>
+      <div class="arm-takeaway"><span class="arm-takeaway-tag">Milestone Target</span><p>{{takeaway}}</p></div>
+    </div>
+    <div class="arm-foot flow-foot">
+      <div class="arm-doe-mark" data-visual-event="signature-mark"></div>
+      <div class="arm-foot-center">{{footer-label}}</div>
+      <div class="arm-foot-right">
+        <span>{{date}}</span>
+        <span class="arm-foot-sep"></span>
+        <span class="arm-foot-page">{{page-no}} / {{page-total}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+</template>
+
+<template id="slide-closing">
+<section class="slide slide-bleed" data-density="editorial" style="background-color:#194173;">
+  {{@gradient-bg preset=theme}}
+  {{@scrim variant=left color=#112E54 from=0.78 mid=0.48 to=0.18 z=1}}
+  <div class="arm-cover-wrap">
+    <div class="arm-cover-sky">
+      <div class="arm-cover-top">
+        <div class="arm-cover-kicker">{{kicker}}</div>
+        <svg class="arm-logo" viewBox="972 36 140 50" fill="none" aria-hidden="true" data-visual-event="signature-mark"><path d="M1005.15 73.05 1006.26 69.8 1007.77 65.37 1019.61 65.37 1020.45 67.88 1021.52 71.07C1025.94 70.7 1030.63 70.45 1035.61 70.33L1035.61 59.04 1037.47 59.04C1038.92 59.04 1039.9 59.87 1041.7 64.62 1042.57 66.9 1043.26 68.83 1043.79 70.25 1043.85 70.25 1043.91 70.26 1043.98 70.28 1049.55 70.34 1054.8 70.57 1059.72 70.94L1059.72 49.32 1059.79 49.54 1061.69 55.69 1063.9 62.86 1064.28 64.09 1066.55 71.56C1069.15 71.84 1071.65 72.15 1074.03 72.48L1074.56 70.71 1075.42 67.93 1078.27 58.76 1081.2 49.32 1081.2 73.63C1083.83 74.1 1086.29 74.6 1088.58 75.1L1088.58 38.19 1077.58 38.19 1073.97 50.6 1070.5 62.5 1070.45 62.6 1070.4 62.5 1068.96 57.56 1067.45 52.38 1065.8 46.73 1063.31 38.19 1052.31 38.19 1052.31 69.75C1052.31 69.75 1051.12 66.96 1049.67 63.4 1048.7 61.03 1048.05 59.37 1047.29 58.11 1046.86 57.4 1046.39 56.82 1045.81 56.32L1045.87 56.29C1046.42 56.12 1046.94 55.8 1047.44 55.39 1049.18 53.95 1050.51 51.22 1050.51 48.11 1050.51 45.27 1049.75 42.9 1048.18 41.25 1048 41.06 1047.85 40.84 1047.65 40.67 1045.99 39.24 1043.78 38.59 1040.88 38.34 1040.02 38.27 1039.1 38.23 1038.12 38.21 1037.81 38.21 1037.52 38.2 1037.19 38.2L1028.36 38.2 1028.36 67.37 1027.33 64.55 1023.39 53.74 1018.92 41.46 1017.73 38.2 1009.6 38.2 1007.08 45.42 1006.4 47.37 1003.09 56.84 1002.3 59.11 999.5 67.13 998.66 69.53 996.9 74.56C999.46 74.03 1002.2 73.52 1005.15 73.05ZM1035.6 50.96 1035.6 45.02 1038.51 45.02C1038.71 45.02 1038.88 45.04 1039.07 45.05 1041.68 45.21 1043.23 46.52 1043.23 49.07 1043.23 51.1 1042.1 52.28 1040.13 52.72 1039.53 52.86 1038.87 52.93 1038.13 52.93L1035.6 52.93 1035.6 50.95ZM1011.54 53.36 1012.46 50.51 1013.53 47.21 1015.64 53.51 1017.49 59.04 1009.68 59.04 1011.53 53.36Z" fill="#FFFFFF"/><path d="M974.04 84.26C974.04 84.26 998.33 73.09 1041.41 73.09 1084.49 73.09 1109.04 84.26 1109.04 84.26 1109.04 84.26 1087.37 76.72 1041.41 76.72 995.45 76.72 974.04 84.26 974.04 84.26Z" fill="#FFFFFF"/></svg>
+      </div>
+      <div class="arm-cover-hero">
+        <h2 class="arm-cover-title">{{title}}</h2>
+        <p class="arm-sec-sub">{{subtitle}}</p>
+        <div class="arm-close-card" data-visual-event="visual-plate">
+          <div class="arm-close-ack">{{acknowledgment}}</div>
+          <div class="arm-close-contact">
+            <span class="cn">{{contact-name}}</span>
+            <span class="ce">{{contact-email}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="arm-lab-bar" data-visual-event="visual-plate"></div>
+    <div class="arm-cover-foot">
+      <div class="arm-doe-mark" data-visual-event="signature-mark"></div>
+      <div class="arm-foot-center">{{footer-label}}</div>
+      <div class="arm-foot-right">
+        <span>{{date}}</span>
+        <span class="arm-foot-sep"></span>
+        <span class="arm-foot-page">{{page-no}} / {{page-total}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+</template>

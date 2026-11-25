@@ -1,0 +1,257 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "density": "editorial",
+      "slots": {
+        "kicker": "DOE Office of Science · ARM User Facility",
+        "title": "Cloud, Aerosol, and Radiative Flux Observations Across ARM Observatories",
+        "presenter": "ARM User Facility Science & Engineering Team",
+        "organization": "Atmospheric Radiation Measurement (ARM) User Facility · U.S. Department of Energy",
+        "event": "Joint ARM User Facility / ASR Principal Investigators Meeting · Rockville, MD",
+        "footer-label": "ARM User Facility Technical Briefing",
+        "date": "November 18, 2026",
+        "theme": "sky"
+      }
+    },
+    {
+      "type": "standard",
+      "density": "balanced",
+      "slots": {
+        "eyebrow": "Facility Overview",
+        "title": "Continuous multi-decadal observations link aerosol microphysics to earth system radiative forcing",
+        "lead": "Four integrated operational pillars sustain continuous, calibrated atmospheric state measurements across fixed and mobile observatories.",
+        "s1-title": "Fixed Megawatt Observatories",
+        "s1-body": "Southern Great Plains (SGP), North Slope of Alaska (NSA), and Eastern North Atlantic (ENA) provide continuous 24/7 baseline column profiles.",
+        "s1-meta": "3 Fixed Sites",
+        "s2-title": "Mobile & Aerial Deployments",
+        "s2-body": "Three ARM Mobile Facilities (AMF1, AMF2, AMF3) and the Aerial Facility Challenger 850 target high-priority climate regimes worldwide.",
+        "s2-meta": "3 AMFs + Aerial",
+        "s3-title": "Calibrated Value-Added Products",
+        "s3-body": "Automated ingest pipelines convert raw radar, lidar, and radiometer streams into netCDF Value-Added Products (VAPs) within 24 hours.",
+        "s3-meta": "180+ VAPs",
+        "s4-title": "Open High-Performance Data",
+        "s4-body": "All observational datasets and LES modeling testbeds are freely accessible to the international research community via the ARM Data Center.",
+        "s4-meta": "5.8 PB Archive",
+        "takeaway": "Synchronizing dual-polarization radar upgrades with high-resolution LES modeling reduces cloud-radiative feedback uncertainty by 28%.",
+        "footer-label": "ARM User Facility Overview",
+        "date": "November 18, 2026"
+      }
+    },
+    {
+      "type": "section-divider",
+      "density": "editorial",
+      "slots": {
+        "section-no": "01",
+        "title": "Observatory Infrastructure & Field Campaign Performance",
+        "subtitle": "Evaluating FY2026 data availability, instrument uptime, and radiative flux closure across fixed and mobile ARM sites.",
+        "footer-label": "Section 01 · Observatory Operations",
+        "date": "November 18, 2026",
+        "theme": "sky"
+      }
+    },
+    {
+      "type": "metrics",
+      "density": "balanced",
+      "slots": {
+        "eyebrow": "FY2026 Operational Performance",
+        "title": "ARM observatories achieved 97.4% calibrated instrument uptime across 460 active datastreams",
+        "hero-value": "97.4%",
+        "hero-unit": "Uptime",
+        "hero-label": "Baseline Instrument Availability Across SGP, NSA, and ENA",
+        "hero-context": "Automated real-time data quality monitoring (DQO) and rapid field technician response reduced unscheduled radar downtime by 41% year-over-year.",
+        "k1-value": "5.8 PB",
+        "k1-label": "Total Open Data Archive",
+        "k1-note": "Growing by 1.9 TB/day from high-rate Ka/W-band scanning cloud radars and Doppler lidars.",
+        "k2-value": "1,420",
+        "k2-label": "Active Science Users",
+        "k2-note": "Researchers across 290 institutions downloading calibrated netCDF datastreams and VAPs.",
+        "k3-value": "1.8 W/m²",
+        "k3-label": "Shortwave Flux Closure",
+        "k3-note": "Mean surface radiative closure residual achieved during clear-sky SGP intensive periods.",
+        "k4-value": "4,680 hr",
+        "k4-label": "IOP Campaign Hours",
+        "k4-note": "Intensive Operational Period hours logged across AMF3 Southeast US and tethered balloon ops.",
+        "footer-label": "FY2026 Facility Metrics",
+        "date": "November 18, 2026"
+      }
+    },
+    {
+      "type": "section-split",
+      "density": "balanced",
+      "slots": {
+        "title": "Bankhead National Forest deployment captures land-atmosphere coupling in the Southeast US",
+        "lead": "AMF3 integrates canopy tower eddy-covariance flux systems with scanning precipitation and cloud radars.",
+        "h1-title": "Boundary Layer Turbulence & Convection",
+        "h1-body": "Tripled Doppler lidar network resolves vertical velocity variance from the forest canopy top through shallow cumulus cloud base.",
+        "h2-title": "Biogenic Secondary Organic Aerosols",
+        "h2-body": "Aerosol Observing System (AOS) characterizes isoprene/monoterpene oxidation and CCN activation under humid continental regimes.",
+        "h3-title": "Distributed Soil & Canopy Energy Balance",
+        "h3-body": "Three supplemental extended facilities measure sub-canopy radiation, soil moisture profiles, and sensible/latent heat partitioning.",
+        "figure-caption": "AMF3 Main Site Tower & Scanning Radar Dome at Bankhead National Forest (BNF), Alabama",
+        "footer-label": "AMF3 Southeast US Deployment",
+        "date": "November 18, 2026"
+      }
+    },
+    {
+      "type": "comparison",
+      "density": "balanced",
+      "slots": {
+        "title": "Contrasting boundary-layer cloud microphysics between Marine (ENA) and Continental (SGP) sites",
+        "left-title": "Eastern North Atlantic (ENA · Graciosa)",
+        "left-tag": "Marine Stratocumulus",
+        "left-items": "Persistent marine boundary layer (MBL) stratocumulus decks driven by synoptic subsidence|Baseline CCN concentrations (80 to 220 cm⁻³) yielding larger cloud droplet effective radii|--Frequent drizzle-induced cold pools and open-to-closed cellular mesoscale transitions| Pronounced sensitivity to long-range North American and European aerosol plume intrusions",
+        "right-title": "Southern Great Plains (SGP · Oklahoma)",
+        "right-tag": "Continental Cumulus",
+        "right-items": "Diurnally forced shallow-to-deep convective transitions tied to surface evaporative fraction|Elevated continental aerosol loading (600 to 1,800 cm⁻³) suppressing warm-rain initiation|--Nocturnal low-level jet moisture transport governing MCS initiation and propagation|Direct coupling between soil moisture heterogeneity and afternoon lifting condensation level",
+        "takeaway": "Co-analyzing ENA and SGP cloud radar retrievals isolates aerosol indirect effects from thermodynamic boundary-layer forcing.",
+        "footer-label": "ENA vs. SGP Regime Analysis",
+        "date": "November 18, 2026"
+      }
+    },
+    {
+      "type": "picture-caption",
+      "density": "balanced",
+      "slots": {
+        "title": "In-situ cloud microphysics probes validate remote-sensing retrievals during overcast IOPs",
+        "figure-caption": "ARM Aerial Facility Challenger 850 instrumented wing pylons with Fast-CDP, HVPS, and Counterflow Virtual Impactor inlet",
+        "caption-title": "Coordinated Spiral Profiles Over SGP Central Facility",
+        "caption-body": "Stacked racetrack legs between 0.5 km and 8.5 km ASL provide co-located liquid/ice water content, droplet size distributions, and interstitial aerosol chemistry directly within the Ka-band zenith radar beam.",
+        "site-code": "AAF · IOP-2026",
+        "m1-value": "148 hr",
+        "m1-label": "Research Flight Hours Completed",
+        "m2-value": "34",
+        "m2-label": "Coordinated Radar Underflights",
+        "m3-value": "6.2%",
+        "m3-label": "LWC Retrieval Bias vs. Probe",
+        "footer-label": "ARM Aerial Facility Operations",
+        "date": "November 18, 2026"
+      }
+    },
+    {
+      "type": "time-series",
+      "density": "data-dense",
+      "slots": {
+        "title": "Assimilating Raman Lidar thermodynamic profiles improves shortwave irradiance hindcasts across all seasons",
+        "chart-title": "Monthly Downwelling Shortwave Flux RMSE (W/m²) · SGP Central Facility",
+        "chart-data": "24.2|22.8|19.5|17.4|16.1|14.8|14.2|13.9|14.5|16.2|18.4|19.1",
+        "chart-labels": "Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec",
+        "compare-data": "31.0|29.5|27.8|26.4|25.9|24.8|24.1|23.8|24.6|26.1|28.0|29.4",
+        "primary-label": "Lidar VAP",
+        "compare-label": "Baseline Control",
+        "chart-unit": "W/m²",
+        "chart-note": "-38% mean summer RMSE",
+        "finding-title": "Thermodynamic Constraint Impact",
+        "finding-body": "Continuous 10-minute Raman Lidar water vapor and temperature profiles eliminate sub-cloud relative humidity biases prior to shallow cumulus onset.",
+        "f1-label": "Summer Peak RMSE Reduction",
+        "f1-value": "-9.9 W/m²",
+        "f2-label": "Cloud Base Height MAE",
+        "f2-value": "85 m",
+        "f3-label": "Temporal Resolution",
+        "f3-value": "10 min",
+        "footer-label": "SGP Radiative Closure Analysis",
+        "date": "November 18, 2026"
+      }
+    },
+    {
+      "type": "bar-analysis",
+      "density": "data-dense",
+      "slots": {
+        "title": "High-frequency scanning radar and LES testbed products drive record community data volume",
+        "chart-title": "Annual Science Data Volume Delivered to Users (TB) by Instrument Class",
+        "chart-data": "420|580|740|910|1180|1490",
+        "chart-labels": "Radiometry|Aerosol (AOS)|Lidar Systems|Atmos State|LASSO LES|Cloud Radar",
+        "chart-unit": "TB",
+        "chart-highlight": "Cloud Radar",
+        "chart-note": "Cloud Radar + LASSO = 50% of volume",
+        "c1-title": "Ka/W-Band Scanning Radars",
+        "c1-stat": "1,490 TB",
+        "c1-body": "Dual-frequency Doppler spectra and polarimetric moments remain the highest-demand observational product across ASR working groups.",
+        "c2-title": "LASSO LES Model Bundles",
+        "c2-stat": "1,180 TB",
+        "c2-body": "Library of Large-Eddy Simulations paired with SGP and CACTI observations enables scale-aware cumulus parameterization testing.",
+        "c3-title": "Aerosol Observing System",
+        "c3-stat": "580 TB",
+        "c3-body": "Single-particle soot photometer, ACSM chemical speciation, and humidified nephelometer streams support aerosol-cloud interaction studies.",
+        "footer-label": "ARM Data Center Utilization",
+        "date": "November 18, 2026"
+      }
+    },
+    {
+      "type": "instrument-table",
+      "density": "data-dense",
+      "slots": {
+        "title": "Calibrated multi-sensor suite spans millimeter-wave radar, lidar, radiometry, and aerosol sampling",
+        "lead": "Standardized calibration protocols across all ARM observatories guarantee directly comparable physical units from the Arctic to the tropics.",
+        "row-headers": "KAZR (Ka-Band Zenith Radar)|MPL & HSRL (Lidar Suite)|AERI (Infrared Radiometer)|AOS (Aerosol Observing System)|SONDE & RWP (Wind & State)",
+        "col-headers": "Operating Band|Vertical & Temporal Res.|Primary Retrieved Quantities|Calibration Standard",
+        "cells": "34.86 GHz (8.6 mm) / 30 m · 2 s / Reflectivity, Doppler velocity, spectral width / Corner reflector & disdrometer||532 & 355 nm / 15 m · 10 s / Particulate backscatter, depolarization, extinction / Molecular Rayleigh normalization||3.3 to 19.2 µm / 30 to 100 m · 8 min / Tropospheric T(z), q(z), cloud IR emissivity / Dual NIST-traceable blackbodies||10 nm to 10 µm / Surface · 1 min / CCN, N_CN, absorption, chemical composition / PSL spheres & ammonium sulfate||403 MHz & 915 MHz / 100 m · 6 hr / Full column T, RH, and 3D wind profiles (u, v, w) / Reference radiosonde dual-launch",
+        "takeaway": "Co-locating KAZR, HSRL, and AERI on a shared 2-second to 1-minute time base enables synergistic microphysical retrievals (MICROBASEKAPLUS).",
+        "footer-label": "Instrument Specification Matrix",
+        "date": "November 18, 2026"
+      }
+    },
+    {
+      "type": "architecture",
+      "density": "balanced",
+      "slots": {
+        "title": "Automated ingest, quality control, and LASSO modeling bridge field sensors to E3SM parameterization",
+        "rail-label": "ARM Data Center",
+        "rail-title": "End-to-End Scientific Workflow",
+        "rail-sub": "Managed at Oak Ridge National Laboratory with federated compute across DOE Leadership Computing Facilities.",
+        "t1-code": "L0/L1 Ingest",
+        "t1-name": "Field Acquisition & Standards",
+        "t1-a": "Real-time raw telemetry from SGP, NSA, ENA, AMFs, and AAF converted to CF-compliant netCDF4",
+        "t1-b": "Automated Data Quality Office (DQO) bounds checks, calibration drift tracking, and DQR flagging",
+        "t1-c": "Long-term archival replication with persistent DOIs assigned to every citable datastream",
+        "t2-code": "VAP Retrievals",
+        "t2-name": "Value-Added Products",
+        "t2-a": "ARSCL cloud boundaries combining radar, micropulse lidar, and laser ceilometer detections",
+        "t2-b": "TROPoe thermodynamic profiles merging AERI infrared radiances with Raman lidar water vapor",
+        "t2-c": "QCRAD best-estimate surface broadband radiative fluxes with automated shadowband corrections",
+        "t3-code": "LASSO & E3SM",
+        "t3-name": "Modeling & Diagnostic Testbeds",
+        "t3-a": "Ensemble Large-Eddy Simulations (LES) forced by ARM variational analysis (VARANAL) fields",
+        "t3-b": "Instrument forward simulators (EMC2 / CR-SIM) translating model states into synthetic radar/lidar",
+        "t3-c": "Direct diagnostic benchmarking for DOE E3SM cloud, aerosol, and land-surface parameterizations",
+        "footer-label": "ARM Data & Computing Architecture",
+        "date": "November 18, 2026"
+      }
+    },
+    {
+      "type": "roadmap",
+      "density": "balanced",
+      "slots": {
+        "eyebrow": "FY2026 to FY2028 Strategic Roadmap",
+        "title": "Phased deployment schedule expands scanning radar networks, UAS payloads, and AI-ready datasets",
+        "p1-code": "FY2026 · Active",
+        "p1-name": "AMF3 & Radar Modernization",
+        "p1-items": "Complete full-year seasonal cycle at AMF3 Bankhead National Forest (BNF) observatory|Commission upgraded solid-state Ka/X-band scanning precipitation radars at SGP and ENA|--Release open-source Py-ART 2.0 and ACT (Atmospheric data Community Toolkit) workflows",
+        "p2-code": "FY2027 · Planned",
+        "p2-name": "High-Latitude & Tethered Systems",
+        "p2-items": "Deploy tethered balloon system (TBS) supercooled liquid water and ice nucleating particle payloads at NSA|Expand LASSO high-resolution simulations to deep convective and marine stratocumulus regimes|--Launch cloud-native Zarr/Parquet AI-ready observational benchmark datasets at ADC",
+        "p3-code": "FY2028 · Horizon",
+        "p3-name": "Airborne Polarimetry & Edge Compute",
+        "p3-items": "Integrate airborne hyperspectral radiometers and multi-angle polarimeters on Challenger 850|Deploy edge-AI adaptive radar scanning at fixed sites to track rapidly evolving convective cores|--Deliver unified 30-year SGP climate-trend reanalysis product for CMIP/E3SM evaluation",
+        "takeaway": "All FY2026 to FY2028 facility enhancements align directly with the DOE BER Decadal Vision for high-resolution aerosol-cloud-precipitation science.",
+        "footer-label": "ARM Multi-Year Strategic Roadmap",
+        "date": "November 18, 2026"
+      }
+    },
+    {
+      "type": "closing",
+      "density": "editorial",
+      "slots": {
+        "kicker": "U.S. Department of Energy · Office of Science",
+        "title": "Advancing Predictive Understanding of Earth's Climate Through Open Atmospheric Observations",
+        "subtitle": "Submit facility proposals, browse real-time site telemetry, and access 5.8 PB of open datasets at arm.gov.",
+        "acknowledgment": "This research was supported by the U.S. Department of Energy's Office of Science, Office of Biological and Environmental Research, as part of the Atmospheric Radiation Measurement (ARM) User Facility, managed by nine DOE national laboratories.",
+        "contact-name": "ARM User Facility Science Liaison Office",
+        "contact-email": "userfacility@arm.gov · www.arm.gov",
+        "footer-label": "ARM User Facility · www.arm.gov",
+        "date": "November 18, 2026",
+        "theme": "navy"
+      }
+    }
+  ]
+}
